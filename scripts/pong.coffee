@@ -1,5 +1,5 @@
 # Description
-#   pong
+#   You say pong. Hubot says PING.
 #
 # Dependencies:
 #   none
@@ -14,7 +14,7 @@
 #
 #
 # Author:
-#   gustavo.barbosa
+#   Gustavo Barbosa
 
 module.exports = (robot) ->
   robot.respond /PONG$/i, (msg) ->
