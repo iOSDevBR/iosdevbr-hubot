@@ -18,5 +18,4 @@
 
 module.exports = (robot) ->
   robot.hear /(ornitorrinco|avestruz)/i, (msg) ->
-    msg.reply "Opa! Você falou a palavra secreta: #{msg.match[1]}"
-    msg.reply "https://pt.wikipedia.org/wiki/Ornitorrinco"
+    msg.reply "Opa! Você falou a palavra secreta: #{msg.match[1]} https://pt.wikipedia.org/wiki/Ornitorrinco"
