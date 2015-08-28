@@ -5,7 +5,7 @@
   "author": "Gustavo Barbosa <gustavocsb@gmail.com>",
   "description": "A simple helpful robot for your Company",
   "dependencies": {
-    "hubot": "^2.12.0",
+    "hubot": "^2.16.0",
     "hubot-diagnostics": "0.0.1",
     "hubot-google-images": "^0.1.4",
     "hubot-google-translate": "^0.1.0",

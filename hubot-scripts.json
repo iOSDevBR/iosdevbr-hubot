@@ -1,1 +1,14 @@
-["redis-brain.coffee", "shipit.coffee", "9gag.coffee", "advice.coffee", "base64.coffee", "ascii.coffee", "bitly.coffee", "countdown.coffee", "decide.coffee", "geocodeme.coffee", "hashing.coffee", "isup.coffee"]
+[
+  "redis-brain.coffee",
+  "shipit.coffee",
+  "9gag.coffee",
+  "advice.coffee",
+  "base64.coffee",
+  "ascii.coffee",
+  "bitly.coffee",
+  "countdown.coffee",
+  "decide.coffee",
+  "geocodeme.coffee",
+  "hashing.coffee",
+  "isup.coffee"
+]
