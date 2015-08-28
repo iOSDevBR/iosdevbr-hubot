@@ -19,8 +19,15 @@
     "hubot-shipit": "^0.2.0",
     "hubot-slack": "^3.3.0",
     "hubot-youtube": "^0.1.2"
+    "htmlparser": "1.7.6",
+    "soupselect": "0.2.0",
+    "big-integer": "1.1.5",
+    "googleanalytics":"0.3.6",
+    "date-utils": ">=1.2.5",
+    "request":">=2.40.0"
   },
   "engines": {
     "node": "0.10.x"
+    "npm": ">= 1.1.x"
   }
 }
