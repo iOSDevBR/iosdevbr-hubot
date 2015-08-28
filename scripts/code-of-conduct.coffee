@@ -1,5 +1,5 @@
 # Description
-#   Script to troll John Calistro
+#   Script para Código de Conduta
 #
 # Dependencies:
 #   none
@@ -8,14 +8,15 @@
 #   none
 #
 # Commands:
-#   :john:
+#   none
 #
 # Notes:
-#   It just listens to the feed and interact with the emoji
+#   none
 #
 # Author:
 #   Gustavo Barbosa
 
 module.exports = (robot) ->
-  robot.hear /ornitorrinco/i, (msg) ->
-    msg.reply "Opa! Você falou a palavra secreta! https://pt.wikipedia.org/wiki/Ornitorrinco"
+  robot.hear /(ornitorrinco|avestruz)/i, (msg) ->
+    msg.reply "Opa! Você falou a palavra secreta: #{msg.match[1]}"
+    msg.reply "https://pt.wikipedia.org/wiki/Ornitorrinco"
