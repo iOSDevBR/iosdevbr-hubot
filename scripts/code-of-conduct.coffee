@@ -18,4 +18,4 @@
 
 module.exports = (robot) ->
   robot.hear /(ornitorrinco|avestruz)/i, (msg) ->
-    msg.send "Opa! @#{msg.envelope.user.id} Você falou a palavra secreta: #{msg.match[1]} https://pt.wikipedia.org/wiki/Ornitorrinco"
+    msg.send "Opa! @#{msg.envelope.user.name} Você falou a palavra secreta: #{msg.match[1]} https://pt.wikipedia.org/wiki/Ornitorrinco"
