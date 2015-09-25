@@ -11,7 +11,7 @@
 #   hubot obrigado, valeu, thanks, etc.
 #
 # Notes:
-#   
+#
 #
 # Author:
 #   ghvillasboas
@@ -34,4 +34,4 @@ greetings = [
 
 module.exports = (robot) ->
   robot.respond /.*(obrigado|obgd|valeu|thankx|thanks|:thumbsup:|thank you|tnkx|tnks).*/i, (msg) ->
-    msg.reply "#{msg.random greetings}"
+    msg.send "<@#{msg.envelope.user.id}>: #{msg.random greetings}"
