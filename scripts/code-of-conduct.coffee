@@ -17,5 +17,7 @@
 #   Gustavo Barbosa
 
 module.exports = (robot) ->
-  robot.hear /(ornitorrinco|avestruz)/i, (msg) ->
-    msg.send "Opa! <@#{msg.envelope.user.id}> Você falou a palavra secreta: #{msg.match[1]} https://pt.wikipedia.org/wiki/Ornitorrinco"
+  robot.hear /(gay|viado|bicha|coisa de menina|afeminado|igual mulher)/i, (msg) ->
+    msg.send "Ei <@#{msg.envelope.user.id}>. *#{msg.match[1]}* não é uma coisa legal de se falar por aqui. " +
+             "Depois dá uma conferida no Código de Conduta do grupo :wink:"
+    msg.send "https://github.com/iOSDevBR/Codigo-De-Conduta"
