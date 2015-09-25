@@ -19,13 +19,12 @@
 greetings = [
   "Tá tranquilo :wink:",
   "Relaxa :smile:",
-  "Tá de boa na lagoa :smimmer:",
+  "Tá de boa na lagoa :swimmer:",
   "Tá sussa :v:",
   "Hi five! :hand:",
-  "Soquinho! :punch:",
-  ":heart:"
+  "Soquinho! :punch:"
 ]
 
 module.exports = (robot) ->
   robot.respond /.*(sorry|desculpa|desculpas|perdão|perdao|foi mal|foi mal ae|mal ae|mal ai|foi mal ai|my bad).*/i, (msg) ->
-    msg.reply "#{msg.random greetings}"
+    msg.send "#{msg.random greetings}"
