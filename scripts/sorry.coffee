@@ -27,4 +27,4 @@ greetings = [
 
 module.exports = (robot) ->
   robot.respond /.*(sorry|desculpa|desculpas|perdão|perdao|foi mal|foi mal ae|mal ae|mal ai|foi mal ai|my bad).*/i, (msg) ->
-    msg.send "#{msg.random greetings}"
+    msg.send "<@#{msg.envelope.user.id}>: #{msg.random greetings}"
