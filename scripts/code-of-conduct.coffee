@@ -17,8 +17,8 @@
 #   Gustavo Barbosa
 
 module.exports = (robot) ->
-  homophobic = ["gay", "viado", "bicha", "boiola", "viadinho", "bichona", "chupa", "chupar", "g0y", "lésbica", "homosexual", "machona", "baitola"]
-  chauvinist = ["coisa de menina", "afeminado", "igual mulher", "igual garota", "igual menina", "mocinha", "lugar de mulher", "vadia", "vagabunda", "puta"]
+  homophobic = ["gay", "viado", "bicha", "boiola", "viadinho", "bichona", " hupa", "chupar", "g0y", "lésbica", "homosexual", "machona", "baitola"]
+  chauvinist = ["coisa de menina", "afeminado", "igual mulher", "igual garota", "igual menina", "mocinha", "lugar de mulher", "vadia", "vagabunda"]
   expressions = homophobic.concat chauvinist
 
   regex = RegExp('(' + expressions.join('|') + ')', 'i')
