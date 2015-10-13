@@ -4,11 +4,10 @@
 #
 
 module.exports = (robot) ->
-    dumbwords = ["burro","burrinho","idiota","otario"]
+    dumbwords = ["burro","burrinho","idiota","otário"]
+    regex = RegExp('(' + dumbwords.join('|') + ')', 'i')
 
-    regex = RegExp('(' + expressions.join('|') + ')', 'i')
-
-    robot.hear regex, (msg) ->
-        msg.send "Ei <@#{msg.envelope.user.id}>! Talvez eu até seja, mas estou sempre disposto a melhorar. " +
-"Bem que você poderia dar uma mão com isso né? :wink:"
-        msg.send "https://github.com/iOSDevBR/iosdevbr-hubot"
+    robot.hear /\bhubot\b/, (msg) ->
+        robot.hear regex, (msg) ->
+            msg.send "Ei <@#{msg.envelope.user.id}>! Talvez eu até seja, mas estou sempre disposto a melhorar. Bem que você poderia dar uma mão com isso né? :wink:"
+            msg.send "https://github.com/iOSDevBR/iosdevbr-hubot"
