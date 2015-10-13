@@ -9,6 +9,6 @@ module.exports = (robot) ->
     regex = RegExp('(' + expressions.join('|') + ')', 'i')
 
     robot.hear regex, (msg) ->
-        msg.send "Ei <@#{msg.envelope.user.id}>. talvez eu até seja, mas estou sempre disposto a melhorar. " +
+        msg.send "Ei <@#{msg.envelope.user.id}>! Talvez eu até seja, mas estou sempre disposto a melhorar. " +
 "Bem que você poderia dar uma mão com isso né? :wink:"
         msg.send "https://github.com/iOSDevBR/iosdevbr-hubot"
