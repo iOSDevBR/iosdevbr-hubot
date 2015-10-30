@@ -1,4 +1,5 @@
-![hubot](http://eng.rightscale.com/images/post-images/justas/hubot.png)
+<img src="http://eng.rightscale.com/images/post-images/justas/hubot.png" width="20%" height="20%"/>
+
 # Hubot do iOSDevBR
 
 O hubot do iOSDevBR serve principalmente para garantir que o nosso [Código de Conduta][coc] está sendo respeitado, alertando casos de mensagens homóficas, racistas, machistas, etc.
