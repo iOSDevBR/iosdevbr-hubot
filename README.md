@@ -1,3 +1,5 @@
+<img src="http://eng.rightscale.com/images/post-images/justas/hubot.png" width="20%" height="20%"/>
+
 # Hubot do iOSDevBR
 
 O hubot do iOSDevBR serve principalmente para garantir que o nosso [Código de Conduta][coc] está sendo respeitado, alertando casos de mensagens homóficas, racistas, machistas, etc.
@@ -23,18 +25,24 @@ Um script que pode servir de exemplo pode ser encontrado em `scripts/thanks.coff
 
 Depois de criado o script, basta incluí-lo na pasta `scripts` e fazer um PR.
 
-Para as tarefas mais comuns, há uma grande chance de alguém já ter feito algo parecido. Você pode encontrar uma lista de scripts feitos [aqui][plugins-list].
+*OBS:*
 
-Para entender mais sobre scripting, acesse a [documentação](scripting-docs).
+1. Para as tarefas mais comuns, há uma grande chance de alguém já ter feito algo parecido. Você pode encontrar uma lista de scripts feitos [aqui][plugins-list].
+
+2. Se ficar com dúvida de como fazer alguma coisa em CoffeeScript, pode acessar a [documentação da linguagem][coffeescript] ou tentar brincar com esse [REPL online][coffee-repl].
+
+3. Para entender mais sobre scripting, acesse a [documentação de scripting](scripting-docs) do hubot.
 
 [scripting-docs]: https://github.com/github/hubot/blob/master/docs/scripting.md
+[coffeescript]: http://coffeescript.org/
+[coffee-repl]: http://larryng.github.io/coffeescript-repl/
 [plugins-list]: https://github.com/hubot-scripts
 
 ## Rodando o hubot localmente
 
 Você pode testar suas modificações no hubot rodando o comando a seguir: 
 
-*(obs: alguns plugins podem não se comportar como o esperado ao menos que algumas [variáveis de ambiente](#configuration) tenham sido definidas corretamente.)*
+*(obs: alguns plugins podem não se comportar como o esperado ao menos que algumas variáveis de ambiente tenham sido definidas corretamente.)*
 
     $ ./bin/hubot
 
