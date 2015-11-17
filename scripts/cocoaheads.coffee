@@ -38,7 +38,7 @@ module.exports = (robot) ->
         try
           if (body.length > 0)
             json = JSON.parse(body)
-            messagem = ""
+            messagem = "\n"
             for agenda in json
               data = new Date(agenda.data)
               mensagemBasica = "-> Em #{agenda.cidade} (#{data.getDate()}/#{data.getMonth()+1}/#{data.getFullYear()}), temos #{agenda.rsvp_sim} confirmados, #{agenda.rsvp_talvez} talvez"
