@@ -24,7 +24,7 @@ module.exports = (robot) ->
       .get() (err, res, body) ->
         try
           json = JSON.parse(body)
-          message = ""
+          message = "\n"
           for agenda in json
             data = new Date(agenda.data)
             message += "Evento: #{agenda.nome}\nData: #{data.getDate()}/#{data.getMonth()+1}/#{data.getFullYear()} às #{data.toLocaleTimeString()}\nLocal: #{agenda.local}\n\n"
