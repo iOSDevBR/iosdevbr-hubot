@@ -67,7 +67,7 @@ module.exports = (robot) ->
               msg.reply "Nenhum evento cadastrado :("
           catch err
             msg.reply "#{err} Hã? Cuma? O que? Não consegui pegar as agendas! :rage:"
-        else
+      else
         msg.http("http://www.cocoaheads.com.br/agendas/total_devs.json?alltime=true")
         .get() (err, res, body) ->
           try
