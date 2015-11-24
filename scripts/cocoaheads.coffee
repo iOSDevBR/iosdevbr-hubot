@@ -60,7 +60,7 @@ module.exports = (robot) ->
               json = JSON.parse(body)
               message = "\n"
               for item in json
-                message += "-> Em #{item.chapter} já tivemos #{item.total} pessoas nos eventos do CocoaHeads\n"
+                message += "-> No CocoaHeads #{item.chapter} já tivemos #{item.total} pessoas\n"
 
               msg.reply message
             else
