@@ -19,5 +19,5 @@ animals = [
 
 module.exports = (robot) ->
 
-  robot.hear /\bxcode\b|\bxCode\b|\bXCODE\b|\bXCode\b/, (res) ->
+  robot.hear /\b((x((c|C)(o|O)(d|D)(e|E)))|(XC((o|O)(d|D)(e|E)))|(Xc((O)(d|D)(e|E)))|(Xco((D)(e|E)))|XcodE)\b/, (res) ->
     res.send "Você acabou de matar #{res.random weapons} um(a) #{res.random animals} ao escrever \"Xcode\" errado."
