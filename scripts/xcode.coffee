@@ -1,5 +1,5 @@
 # Description:
-#   Corrige quem escrever "iOS" errado
+#   Corrige quem escrever "Xcode" errado
 #
 
 weapons = [
@@ -19,5 +19,5 @@ animals = [
 
 module.exports = (robot) ->
 
-  robot.hear /\bIOS\b|\bios\b|\bIos\b/, (res) ->
-    res.send "Você acabou de matar #{res.random weapons} um(a) #{res.random animals} ao escrever \"iOS\" errado."
+  robot.hear /\bxcode\b|\bxCode\b|\bXCODE\b|\bXCode\b/, (res) ->
+    res.send "Você acabou de matar #{res.random weapons} um(a) #{res.random animals} ao escrever \"Xcode\" errado."
