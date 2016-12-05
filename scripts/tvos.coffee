@@ -6,6 +6,6 @@ functions = require "./functions"
 
 module.exports = (robot) ->
 
-  robot.hear /.*\b((T(v|V)(o|O)(s|S))|(t(V)(o|O)(s|S))|tv(os|Os|oS))\b.*/, (res) ->
+  robot.hear /[a-zA-Z0-9\/\.:\-\_]*((T(v|V)(o|O)(s|S))|(t(V)(o|O)(s|S))|tv(Os|oS))[a-zA-Z0-9\/\.:\-\_#]*/, (res) ->
   	
   	functions.mistyping(res, "tvOS")
