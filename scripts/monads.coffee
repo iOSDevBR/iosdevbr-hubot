@@ -7,4 +7,4 @@
 
 module.exports = (robot) ->
   robot.hear /monads/, (msg) ->
-    msg.send "Monads é uma monóide na categoria das endofunctors :monads:"
+    msg.send "Uma Monad em `X` é apenas uma monóide na categoria das endofunctors de `X`, com o produto :heavy_multiplication_x: substituído pela composição de endofunctors e a unidade ajustada para o endofunctor identidade :monads:"
