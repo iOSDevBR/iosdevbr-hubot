@@ -1,7 +1,7 @@
 # Description
-#   Script that sends a monads definition
+#   Script that suggests a google search when user asks how to do something
 # Commands:
-#   monads
+#   como eu faço <blah>
 # Author:
 #   diegoventura
 
