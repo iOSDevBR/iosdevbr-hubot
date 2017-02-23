@@ -6,6 +6,6 @@
 #   diegoventura
 
 module.exports = (robot) ->
-  robot.hear /(como faço|como eu faço) (.*)/i, (res) ->
-    searchTerm = res.match[2].replace(/\ /g, '%20')
-    res.reply "você já tentou pesquisar por #{res.match[2]}+ios no Google? Vou te dar um dica: https://www.google.com/#q=#{searchTerm}+%2B+ios"
+  robot.hear /(como faço|como eu faço|como faco|como eu faco|alguem sabe como|alguém sabe como) (.*)/i, (res) ->
+    searchTerm = res.match[2].replace(/\ /g, '+').replace('?','')
+    res.reply "você já tentou pesquisar por \"ios #{res.match[2]}\" no Google? Vou te dar um dica: https://lmgtfy.com/?q=ios+#{searchTerm}"
